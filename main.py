@@ -1,5 +1,4 @@
-from modules.screen import get_screen as _get_screen
-from modules.mouse import move_mouse as _move_mouse
+from .tools import _get_screen, _move_mouse
 
    
 class InterfaceController():
