@@ -1,4 +1,4 @@
-from .tools import _get_screen, _move_mouse
+from .tools import _get_screen, _move_mouse, _move_and_click
 
    
 class InterfaceController():
@@ -9,5 +9,8 @@ class InterfaceController():
     def get_screen(self):
         return _get_screen()
 
-    def move_mouse(self, x, y):
-        return _move_mouse(x, y)
+    def move_mouse(self, x, y, duration=0.5):
+        _move_mouse(x, y, duration)
+
+    def move_and_click(self, x, y, duration=0.5):
+        _move_and_click(x, y, duration)
